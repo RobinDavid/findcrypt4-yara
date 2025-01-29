@@ -73,7 +73,6 @@ def search(file: str):
         sys.exit(1)
 
     table = Table(show_header=True)
-    print(type(res[0]))
     kind = "Address" if isinstance(res[0], findcrypt4.ExeCryptoMatch) else "Offset"
     table.add_column(kind)
     table.add_column("File")
