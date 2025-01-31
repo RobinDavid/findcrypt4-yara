@@ -64,7 +64,7 @@ def add_rules(file: tuple[str]):
 @main.command(name="search")
 @click.argument('file', type=click.Path(exists=True))
 def search(file: str):
-    """ Add rule files """
+    """ Search cryptography patterns """
     console = Console()
 
     res = findcrypt4.file_search(file)
